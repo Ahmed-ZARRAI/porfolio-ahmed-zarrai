@@ -1,0 +1,163 @@
+.timeline-images {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 500;
+  top: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*animation: example 0.3s;*/
+}
+
+.animate-popup {
+  animation: animateGroup 0.4s;
+}
+
+.timeline-images .title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.timeline-images .container-imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-images img.main {
+  /*width: 700px;*/
+  max-height: 550px;
+}
+
+.timeline-images .prev-img,
+.timeline-images .next-img {
+  height: 100px;
+  margin: 0px 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.timeline-images .next-img:hover {
+  transform: translateX(10px);
+}
+
+.timeline-images .prev-img:hover {
+  transform: translateX(-10px);
+}
+
+.timeline-images .prev-img {
+  align-self: flex-start;
+}
+
+.timeline-images .next-img {
+  align-self: flex-end;
+}
+
+#img_container {
+  /*width: 700px;*/
+  max-height: 550px;
+}
+
+.timeline-images .image-animate {
+  animation: img_change 0.3s;
+}
+
+#puces_container {
+  width: 100%;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.puce {
+  display: block;
+  margin: 0px 15px;
+  background-color: transparent;
+  width: 0px;
+  border-radius: 500px;
+  border: solid 8px #00c2ff;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.active-puce {
+  width: 20px;
+  animation: puce_anim 0.2s forwards;
+}
+
+@keyframes animateGroup {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes img_change {
+  from {
+    transform: scale(0.6);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes puce_anim {
+  from {
+    width: 20px;
+  }
+  to {
+    width: 40px;
+  }
+}
+
+.xs-no {
+  display: block;
+}
+
+.xs-yes {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .timeline-images img.main {
+    max-height: 700px;
+  }
+
+  #img_container {
+    max-height: 700px;
+  }
+
+  .xs-no {
+    display: none;
+  }
+  .xs-yes {
+    display: block;
+    transform: scale(0.6);
+  }
+
+  .timeline-images .next-img:hover {
+    transform: scale(0.6) translateX(10px);
+  }
+
+  .timeline-images .prev-img:hover {
+    transform: scale(0.6) translateX(-10px);
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+/* @media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+} */

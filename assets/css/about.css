@@ -1,0 +1,225 @@
+.about-section {
+  position: relative;
+}
+
+.about-section .about-img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.about-section .who-img {
+  display: none;
+}
+
+.about-section .content-txt {
+  position: absolute;
+  top: 320px;
+  left: 100px;
+  width: 630px;
+  font-size: 30px;
+  transform: scaleY(1.2);
+}
+
+.content-txt p {
+  /*font-family: "Roboto";*/
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: avgns !important;
+}
+
+.content-txt .line {
+  display: block;
+  margin-bottom: 0px;
+}
+
+.content-txt .thin1 {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.content-txt .strong1 {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.content-txt .strong2 {
+  font-weight: 900;
+  font-size: 28px;
+}
+
+.blue-line {
+  background-image: linear-gradient(
+    180deg,
+    transparent 49.9%,
+    #262b68 0.1%,
+    #262b68 50%
+  );
+}
+
+.red-line {
+  background-image: linear-gradient(
+    180deg,
+    transparent 49.9%,
+    #e32425 0.1%,
+    #e32425 50%
+  );
+}
+
+@media (max-width: 980px) {
+  #particles-js {
+    margin-bottom: 0px !important;
+  }
+  .about-section .about-img {
+    display: none;
+  }
+  .about-section .who-img {
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 100px;
+  }
+  .about-section .content-txt {
+    position: relative !important;
+    width: 840px !important;
+    font-size: 40px !important;
+    top: 0px !important;
+    left: 0px !important;
+    margin: auto;
+  }
+  .content-txt .strong1 {
+    font-weight: 600;
+    font-size: 45px;
+  }
+
+  .content-txt .strong2 {
+    font-weight: 900;
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  #particles-js {
+    margin-bottom: 340px;
+  }
+  .about-section .content-txt {
+    position: absolute;
+    top: 220px;
+    left: 84px;
+    width: 643px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #particles-js {
+    margin-bottom: 230px;
+  }
+  .about-section .content-txt {
+    position: absolute;
+    top: 190px;
+    left: 84px;
+    width: 530px;
+    font-size: 16px;
+  }
+  .content-txt p {
+    font-family: "Roboto";
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #particles-js {
+    margin-bottom: 340px;
+  }
+  .about-section .content-txt {
+    position: absolute;
+    top: 260px;
+    left: 142px;
+    width: 630px;
+    font-size: 23px;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  #particles-js {
+    margin-bottom: 340px;
+  }
+  .about-section .content-txt {
+    position: absolute;
+    top: 270px;
+    left: 165px;
+    width: 695px;
+    font-size: 26px;
+  }
+  .content-txt .strong1 {
+    font-weight: 600;
+    font-size: 28px;
+  }
+
+  .content-txt .strong2 {
+    font-weight: 900;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .about-section .content-txt {
+    position: absolute;
+    top: 320px;
+    left: 212px;
+    width: 750px;
+    font-size: 28px;
+  }
+  .content-txt .strong1 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .content-txt .strong2 {
+    font-weight: 900;
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  #particles-js {
+    margin-bottom: 400px;
+  }
+}
+
+@font-face {
+  font-family: spider1;
+  src: url("../fonts/EXTRAARA.ttf");
+}
+
+@font-face {
+  font-family: spider2;
+  src: url("../fonts/EXTRABOR.ttf");
+}
+
+@font-face {
+  font-family: spider3;
+  src: url("../fonts/EXTRANO_.ttf");
+}
+
+@font-face {
+  font-family: spider4;
+  src: url("../fonts/EXTRASOM.ttf");
+}
+
+@font-face {
+  font-family: spider5;
+  src: url("../fonts/EXTRAVAC.ttf");
+}
+
+@font-face {
+  font-family: spider6;
+  src: url("../fonts/HOMOARAK.TTF");
+}
+
+@font-face {
+  font-family: avgns;
+  src: url("../fonts/Avengeance.ttf");
+}
